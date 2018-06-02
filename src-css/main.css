@@ -1,0 +1,34 @@
+html body {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+  html body #sidenav.active {
+    left: 0px; }
+  html body #sidenav {
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    left: -200px;
+    transition: all 500ms linear;
+    background: pink; }
+    html body #sidenav .toggle-btn {
+      position: absolute;
+      left: 220px;
+      top: 20px; }
+    html body #sidenav ul {
+      position: relative;
+      padding: 0;
+      margin: 0; }
+      html body #sidenav ul li {
+        border-bottom: 1px solid black;
+        list-style: none;
+        padding: 20px;
+        margin: 0; }
+  html body .title {
+    position: fixed;
+    justify-content: center;
+    left: 40%; }
+
+/*# sourceMappingURL=main.css.map */

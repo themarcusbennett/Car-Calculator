@@ -1,0 +1,47 @@
+html body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+    #sidenav.active {
+            left: 0px;
+        }
+    
+    #sidenav {
+        padding: 0;
+        margin: 0;
+        position: fixed;
+        width: 200px;
+        height: 100%;
+        left: -200px;
+        transition: all 500ms linear;
+        background: pink;
+        
+        
+        .toggle-btn {
+            position: absolute;
+            left: 220px;
+            top: 20px;
+        }
+
+        ul {
+            position: relative;
+            padding: 0;
+            margin: 0;
+
+            li {
+                border-bottom: 1px solid black;
+                list-style: none;
+                padding: 20px;
+                margin: 0;
+
+            }
+        }
+    }
+    
+    .title {
+        position: fixed;
+        justify-content: center;
+        left: 40%;
+    }
+}
