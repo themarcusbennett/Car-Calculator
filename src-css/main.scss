@@ -3,17 +3,19 @@ html body {
     padding: 0;
     height: 100%;
     
+    /* JS Toggle Class */
     #sidenav.active {
-            left: 0px;
-        }
+        left: 0px;
+    }
     
     #sidenav {
+        position: fixed;
         padding: 0;
         margin: 0;
-        position: fixed;
         width: 200px;
         height: 100%;
         left: -200px;
+        top: 0;
         transition: all 500ms linear;
         background: pink;
         
@@ -39,9 +41,47 @@ html body {
         }
     }
     
-    .title {
-        position: fixed;
-        justify-content: center;
-        left: 40%;
+    #main-page {
+        height: 100%;
+        width: 100%;
+        
+        .title {
+            position: fixed;
+            text-align: center;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .questions {
+            position: relative;
+            top: 300px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            display: inline-flex;
+            
+            .gas {
+                border: 1px solid black;
+                width: 300px;
+                height: 350px;
+                margin: 0 20px;
+            }
+            
+            .insurance {
+                border: 1px solid black;
+                width: 300px;
+                height: 350px;
+                margin: 0 20px;
+            }
+            
+            .car-note {
+                border: 1px solid black;
+                width: 300px;
+                height: 350px;
+                margin: 0 20px;
+            }
+        }
+        
     }
+     
 }
