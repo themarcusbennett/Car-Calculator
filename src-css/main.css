@@ -3,7 +3,9 @@ html body {
   margin: 0;
   padding: 0;
   height: 100%;
-  /* JS Toggle Class */ }
+  /* JS Toggle Class */
+  /*PAGE 2*/
+  /*ABOUT*/ }
   html body #sidenav.active {
     left: 0px;
     z-index: 2; }
@@ -151,5 +153,12 @@ html body {
     background-color: papayawhip; }
     html body .table tr th {
       border: 2px solid black; }
+  html body .origin {
+    position: relative;
+    left: 50%;
+    top: 100px;
+    width: 50%;
+    transform: translateX(-50%);
+    font-size: 18px; }
 
 /*# sourceMappingURL=main.css.map */

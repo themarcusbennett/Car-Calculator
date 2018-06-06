@@ -165,6 +165,7 @@ html body {
         }
         
     }
+    /*PAGE 2*/
     .table {
         position: relative;
         top: 300px;
@@ -179,4 +180,13 @@ html body {
             border: 2px solid black;
         }
     }    
+    /*ABOUT*/
+    .origin {
+        position: relative;
+        left: 50%;
+        top: 100px;
+        width: 50%;
+        transform: translateX(-50%);
+        font-size: 18px;
+    }
 }
