@@ -1,7 +1,17 @@
-var nav = document.getElementById("sidenav");
-function toggleSidenav(){
-   nav.classList.toggle('active');
-}
+var sideNavigation = document.getElementById("sidenav");
+var toggleButton = document.getElementById("toggle-button");
+
+toggleButton.addEventListener("click", function(){
+    sideNavigation.classList.toggle('active');
+});
+
+var total = document.getElementById("total");
+
+total.keyup(function(e) {
+  if(e.keyCode == 13) {
+    (this).next().focus();
+  }
+});
 /*var monthlyPayment = function (car, month) {
     month = prompt("How many months would you like to calculate this span over?");
 	var gas = prompt("How much money do you spend on gas a month?");

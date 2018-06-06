@@ -1,46 +1,76 @@
 html body {
+    font-family: 'Roboto Mono', monospace;
     margin: 0;
     padding: 0;
     height: 100%;
-    
     /* JS Toggle Class */
     #sidenav.active {
         left: 0px;
+        z-index: 2;
     }
-    
+    #toggle-button.active {
+        visibility: hidden;
+    } 
     #sidenav {
         position: fixed;
         padding: 0;
         margin: 0;
-        width: 200px;
+        box-sizing: border-box;
+        width: 250px;
         height: 100%;
-        left: -200px;
+        left: -250px;
         top: 0;
         transition: all 500ms linear;
-        background: pink;
-        
-        
-        .toggle-btn {
-            position: absolute;
-            left: 220px;
+        background: #bfd3eb;
+        /* #84805d */
+        border-right: 2px solid black;
+        z-index: 3;
+        overflow: hidden;
+        #toggle-button {
+            position: fixed;
+            left: 40px;
             top: 20px;
+            cursor: pointer;
+            z-index: -1;
+            color: black;
         }
-
+        /*.cancel-button {
+            position: absolute;
+            cursor: pointer;
+            top: 20px;
+            left: 200px;
+        }*/
         ul {
             position: relative;
             padding: 0;
             margin: 0;
-
-            li {
-                border-bottom: 1px solid black;
+            text-align: center;
+            font-size: 30px;
+            .list-item {
+                border-bottom: 2px solid black;
                 list-style: none;
                 padding: 20px;
-                margin: 0;
-
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+            li:first-of-type {
+                margin-top: 70px;
+                border-top: 2px solid black;
             }
         }
+        .color-slider {
+                position: absolute;
+                display: flex;
+                width: 100%;
+                height: 79px;
+                left: 0px;
+                top: 2px;
+                background: rgba(255, 255, 255, 0.5);
+                transition: 500ms ease-in-out;
+            }
     }
-    
     #main-page {
         height: 100%;
         width: 100%;
@@ -51,37 +81,102 @@ html body {
             left: 50%;
             transform: translateX(-50%);
         }
-        
+        .pixel-car img {
+            position: fixed;
+            left: 50%;
+            top: 15%;
+            /*Centers item*/
+            transform: translateX(-50%);
+            height: 150px;
+        }
+        .car-name {
+            position: relative;
+            top: 40px;
+            width: 27.7%;
+            left: 65.6%;
+            height: 50px;
+            margin: 0 40px;
+            background-color: papayawhip;
+            border: 3px solid black;
+            text-align: center;
+            height: 200px;
+            .car-input-box {
+                position: relative;
+                //top: 50%;
+            }
+            input:focus {
+                outline: none;
+            }
+            input {
+                position: relative;
+                border: 2px solid black;
+                font-size: 24px;
+                text-align: center;
+                justify-content: center;
+                height: 45px;
+                top: 50px;
+            }
+        }
         .questions {
             position: relative;
-            top: 300px;
-            left: 50%;
-            transform: translateX(-50%);
+            top: 100px;
+            margin: auto 40px;
             text-align: center;
-            display: inline-flex;
-            
+            display: flex;
+            justify-content: space-between;
             .gas {
-                border: 1px solid black;
-                width: 300px;
-                height: 350px;
-                margin: 0 20px;
+                border: 3px solid black;
+                background-color: papayawhip;
+                /*#bfd3eb*/
+                box-sizing: border-box;
+                align-content: space-between;
+                width: 30%;
+                /* applies to all children */
+                height: 300px;    
             }
-            
             .insurance {
-                border: 1px solid black;
-                width: 300px;
-                height: 350px;
-                margin: 0 20px;
+                border: 3px solid black;
+                background-color: papayawhip;
+                /*#bfd3eb*/
+                box-sizing: border-box;
+                align-content: space-between;
+                width: 30%;
             }
-            
             .car-note {
-                border: 1px solid black;
-                width: 300px;
-                height: 350px;
-                margin: 0 20px;
+                border: 3px solid black;
+                background-color: papayawhip;
+                /*#bfd3eb*/
+                box-sizing: border-box;
+                align-content: space-between;
+                width: 30%;
+            }
+            input:focus {
+                outline: none;
+            }
+            input {
+                border: 2px solid black;
+            }
+            #total {
+                position: relative;
+                font-size: 24px;
+                top: 100px;
+                margin: 20px;
             }
         }
         
     }
-     
+    .table {
+        position: relative;
+        top: 300px;
+        left: 47%;
+        transform: translateX(-50%);
+        width: 60%;
+        margin: auto 40px;
+        text-align: center;
+        border: 2px solid black;
+        background-color: papayawhip;
+        tr th {
+            border: 2px solid black;
+        }
+    }    
 }
