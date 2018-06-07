@@ -55,17 +55,25 @@
 <section id="main-page">
     <div class="title">
         <h1>Car Calculator</h1>
-    </div> 
+    </div>
     <div class="pixel-car">
         <img src="pixel-car.png">
     </div>
-    <div class="car-name">
-        <div class="car-input-box">
-            <p>Name of car.</p>
-            <input type="text" placeholder="Betsy">
+    <div id="question-set">
+        <div class="car-name">
+            <div class="car-input-box">
+                <p>Name of car.</p>
+                <input type="text" placeholder="Betsy">
+            </div>
+        </div> 
+        <div class="time-span">
+            <div class="car-input-box">
+                <p>How many months would you like this to span over?</p>
+                <input type="text" placeholder="12 Months">
+            </div>
         </div>
     </div>
-    <div class="questions">
+    <div id="questions">
         <div class="gas">
            <p>How much money do you spend on <strong>Gas</strong> weekly?
            </p>
@@ -81,6 +89,11 @@
            <p>How much is your monthly <strong>Insurance</strong>?</p>
            <input id="total" type="text" placeholder="$100">
        </div>
+    </div>
+    <div class="submit-button">
+        <form action="" method="">
+            <button>Submit</button>
+        </form>
     </div>
 </section>
 
