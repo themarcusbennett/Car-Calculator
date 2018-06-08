@@ -1,23 +1,29 @@
 var sideNavigation = document.getElementById("sidenav");
 var toggleButton = document.getElementById("toggle-button");
 
-toggleButton.addEventListener("click", function(){
+/* Toggle Side Navigation */
+toggleButton.addEventListener("click", function () {
     sideNavigation.classList.toggle('active');
 });
 
-var total = document.getElementById("total");
-
-total.keyup(function(e) {
-  if(e.keyCode == 13) {
-    (this).next().focus();
-  }
+var addToTable = document.getElementById("submit-button");
+addToTable.addEventListener("click", function() {
+    
+    var gas = document.getElementById("gas").value;
+    var insurance = document.getElementById("insurance").value;
+    var carNote = document.getElementById("car-note").value;
+    var table = document.getElementsByTagName("table")[0];
+    
+    var newRow = table.insertRow(1);
+    
+    var cell1 = newRow.insertCell(0);
+    var cell2 = newRow.insertCell(1);
+    var cell3 = newRow.insertCell(2);
+    
+    cell1.innerHTML = gas;
+    cell2.innerHTML = insurance;
+    cell3.innerHTML = carNote;
+    
 });
-/*var monthlyPayment = function (car, month) {
-    month = prompt("How many months would you like to calculate this span over?");
-	var gas = prompt("How much money do you spend on gas a month?");
-	var carNote = prompt("How much is your monthly car note? If not applicable enter 0");
-	var insurance = prompt("How much is your monthly insurance?");
-	car = parseInt(gas) + parseInt(carNote) + parseInt(insurance);
-	alert("You will pay " + car * month + " dollars to keep this car for " + month + " months.");
-}*/
 
+    

@@ -170,11 +170,8 @@ html body {
             }
             input {
                 border: 2px solid black;
-            }
-            #total {
                 position: relative;
                 font-size: 24px;
-                //top: 100px;
                 margin: 20px;
             }
         }
@@ -196,7 +193,7 @@ html body {
     /*PAGE 2*/
     .table {
         position: relative;
-        top: 300px;
+        top: 400px;
         left: 47%;
         transform: translateX(-50%);
         width: 60%;

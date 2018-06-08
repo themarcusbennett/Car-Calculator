@@ -63,13 +63,17 @@
         <div class="car-name">
             <div class="car-input-box">
                 <p>Name of car.</p>
-                <input type="text" placeholder="Betsy">
+                <form>
+                    <input type="text" placeholder="Betsy" required>
+                </form>
             </div>
         </div> 
         <div class="time-span">
             <div class="car-input-box">
                 <p>How many months would you like this to span over?</p>
-                <input type="text" placeholder="12 Months">
+                <form>
+                    <input type="text" placeholder="12 Months" required>
+                </form>
             </div>
         </div>
     </div>
@@ -77,24 +81,28 @@
         <div class="gas">
            <p>How much money do you spend on <strong>Gas</strong> weekly?
            </p>
-           <input id="total" type="text" placeholder="$20">
+           <form>
+               <input id="gas" type="text" name="gas" placeholder="$20" required>
+            </form>
         </div>
        <div class="insurance">
            <p>How much is your monthly <strong>Car Payment</strong>?
            <br> If not applicable enter 0.
            </p>
-           <input id="total" type="text" placeholder="$0">
+           <input id="insurance" type="text" name="insurance" placeholder="$0" required>
        </div>
        <div class="car-payment">
            <p>How much is your monthly <strong>Insurance</strong>?</p>
-           <input id="total" type="text" placeholder="$100">
+           <form>
+               <input id="car-Payment" type="text" name="carPayment" placeholder="$100" required>
+           </form>
        </div>
     </div>
     <div class="submit-button">
-        <form action="" method="">
-            <button>Submit</button>
+        <form action="/page2" method="post">
+            <button id="submit-button">Submit</button>
         </form>
-    </div>
+    </div> 
 </section>
 
 
