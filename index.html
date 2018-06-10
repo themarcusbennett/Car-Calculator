@@ -59,50 +59,48 @@
     <div class="pixel-car">
         <img src="pixel-car.png">
     </div>
-    <div id="question-set">
-        <div class="car-name">
-            <div class="car-input-box">
-                <p>Name of car.</p>
-                <form>
-                    <input type="text" placeholder="Betsy" required>
-                </form>
+    
+    <form class="inputs">
+           
+            <div class="left">
+
+                <label for="name">Name Of Car
+                <br>
+                <input id="name" type="text" placeholder="Betsy" required>
+                </label>
+                <br>
+
+                <label for="time-span">Time Span
+                <br>
+                <input id="time-span" type="text" placeholder="12 Months" required>
+                </label>
+                <br>
+
+                <label id="gas">Weekly Gas Expense
+                <br>
+                <input id="gas" type="text" placeholder="$10" required>
+                </label>
+                <br>
+
             </div>
-        </div> 
-        <div class="time-span">
-            <div class="car-input-box">
-                <p>How many months would you like this to span over?</p>
-                <form>
-                    <input type="text" placeholder="12 Months" required>
-                </form>
+
+            <div class="right">
+
+                <label for="car-payment">Monthly Car Payment
+                <br>
+                <input id="car-payment" type="text" placeholder="$20" required>
+                </label>
+                <br>
+
+                <label for="insurance">Monthly Car Insurance
+                <br>
+                <input id="insurance" type="text" placeholder="$30" required>
+                </label>
+                <br>
+
             </div>
-        </div>
-    </div>
-    <div id="questions">
-        <div class="gas">
-           <p>How much money do you spend on <strong>Gas</strong> weekly?
-           </p>
-           <form>
-               <input id="gas" type="text" name="gas" placeholder="$20" required>
-            </form>
-        </div>
-       <div class="insurance">
-           <p>How much is your monthly <strong>Car Payment</strong>?
-           <br> If not applicable enter 0.
-           </p>
-           <input id="insurance" type="text" name="insurance" placeholder="$0" required>
-       </div>
-       <div class="car-payment">
-           <p>How much is your monthly <strong>Insurance</strong>?</p>
-           <form>
-               <input id="car-Payment" type="text" name="carPayment" placeholder="$100" required>
-           </form>
-       </div>
-    </div>
-    <div class="submit-button">
-        <form action="/page2" method="post">
-            <button id="submit-button">Submit</button>
-        </form>
-    </div> 
+                <button id="submit-button">Submit</button>
+    </form>
 </section>
 
 

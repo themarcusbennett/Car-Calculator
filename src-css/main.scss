@@ -1,3 +1,11 @@
+/* MEDIA QUERIES */ 
+
+@media screen and (max-width: 750px) {
+    .inputs {
+        
+    }
+}
+
 html body {
     font-family: 'Roboto Mono', monospace;
     margin: 0;
@@ -22,15 +30,15 @@ html body {
         left: -250px;
         top: 0;
         transition: all 500ms linear;
-        background: #bfd3eb;
-        /* #84805d */
+        background: rgb(247, 160, 0);
         border-right: 2px solid black;
         z-index: 3;
         overflow: hidden;
+        
         #toggle-button {
             position: fixed;
             left: 40px;
-            top: 20px;
+            margin-top: 27.390px;
             cursor: pointer;
             z-index: -1;
             color: black;
@@ -41,154 +49,144 @@ html body {
             top: 20px;
             left: 200px;
         }*/
+        
         ul {
             position: relative;
             padding: 0;
             margin: 0;
             text-align: center;
             font-size: 30px;
+            
+            .list-item:hover .color-slider {
+                width: 100%;
+            }
             .list-item {
                 border-bottom: 2px solid black;
                 list-style: none;
                 padding: 20px;
+                
+                a:hover {
+                    color: white;
+                }
+                
                 a {
                     text-decoration: none;
-                    color: black;
+                    color: #5a5a5a;
                 }
             }
+            /* LIST ITEM */
+            
             li:first-of-type {
-                margin-top: 70px;
+                margin-top: 80px;
                 border-top: 2px solid black;
             }
-        }
         .color-slider {
-                position: absolute;
-                display: flex;
-                width: 100%;
-                height: 79px;
-                left: 0px;
-                top: 2px;
-                background: rgba(255, 255, 255, 0.5);
-                transition: 500ms ease-in-out;
-            }
+            position: absolute;
+            display: flex;
+            width: 0%;
+            height: 79px;
+            left: 0px;
+            top: 2px;
+            background: orange;
+            transition: 500ms ease-in-out;
+            z-index: -1;
+        }
+        }
+        /* UL */
+        
     }
+    /* SIDE NAV */
+    
     #main-page {
         height: 100%;
         width: 100%;
         
         .title {
-            position: fixed;
+            position: relative;
             text-align: center;
+            font-size: 22px;
             left: 50%;
             transform: translateX(-50%);
         }
         .pixel-car img {
-            position: fixed;
+            position: relative;
             left: 50%;
-            top: 15%;
+            top: 25px;;
             /*Centers item*/
             transform: translateX(-50%);
             height: 150px;
         }
-        #question-set {
+        
+        .inputs {
             position: relative;
-            top: 275px;
             display: flex;
-            font-size: 18px;
-            .car-name {
-                //position: inherit;
-                flex: 1;
-                //top: 60px;
-                width: 27.7%;
-                height: 100px;
-                //left: 65.6%;
-                margin: 0 40px;
-                background-color: #fdd7b2;
-                border: 3px solid black;
-                text-align: center;
-            }
-            .time-span {
-                //position: inherit;
-                flex: 1;
-                //top: 40px;
-                width: 27.7%;
-                height: 100px;
-                //left: 65.6%;
-                margin: 0 40px;
-                background-color: #fdd7b2;
-                border: 3px solid black;
-                text-align: center;
-            }
-                input:focus {
-                    outline: none;
-                }
-                input {
-                    position: relative;
-                    border: 2px solid black;
-                    font-size: 24px;
-                    justify-content: center;
-                    top: -15px;
-                    margin: 10px;
-                }
-        }
-        #questions {
-            position: relative;
-            top: 300px;
-            margin: auto 40px;
-            text-align: center;
-            font-size: 18px;
-            display: flex;
-            justify-content: space-between;
-            .gas {
-                border: 3px solid black;
-                background-color: #fdd7b2;
-                /*#bfd3eb*/
-                box-sizing: border-box;
-                align-content: space-between;
-                width: 30%;
-                /* applies to all children */
-                height: 200px;    
-            }
-            .insurance {
-                border: 3px solid black;
-                background-color: #fdd7b2;
-                /*#bfd3eb*/
-                box-sizing: border-box;
-                align-content: space-between;
-                width: 30%;
-            }
-            .car-payment {
-                border: 3px solid black;
-                background-color: #fdd7b2;
-                /*#bfd3eb*/
-                box-sizing: border-box;
-                align-content: space-between;
-                width: 30%;
-            }
-            input:focus {
-                outline: none;
-            }
-            input {
-                border: 2px solid black;
-                position: relative;
-                font-size: 24px;
-                margin: 20px;
-            }
-        }
-        .submit-button {
-            position: relative;
-            display: inline-flex;
-            top: 325px;
-            left: 42%;
+            top: 100px;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 500;
+            color: #5a5a5a;
             
+            label {
+                line-height: 2.0;
+                }
+            button:focus {
+                outline-width: 0;
+            }
             button {
+                position: absolute;
                 width: 200px;
                 height: 50px;
-                border: 3px solid black;
-                background-color: #fdd7b2;
-                font-size: 20px;
+                top: 350px;
+                color: white;
+                background: #ffad17;
+                font-size: 18px;
+                border: none;
+                margin-bottom: 40px;
+            }
+            input:focus {
+                outline-color: orange;
+            }
+         
+            .left {
+                margin-right: 20px;
+                
+                input {
+                    flex: 1;
+                    position: inherit;
+                    width: 300px;
+                    height: 50px;
+                    font-size: 18px;
+                    background: rgba(247, 160, 0, 0.13);
+                    border: none;
+                    padding: 0 5px;
+                    margin-bottom: 20px;
+                }
+            }
+            
+            .right {
+                margin-left: 20px;
+                input {
+                    flex: 1;
+                    position: inherit;
+                    width: 300px;
+                    height: 50px;
+                    font-size: 18px;
+                    background: rgba(247, 160, 0, 0.13);
+                    border: none;
+                    padding: 0 5px;
+                    margin-bottom: 20px;
+                }
             }
         }
+/* .INPUTS */
+        
+       /* .inputs input{
+            position: inherit;
+            //width: 300px;
+            height: 35px;
+            font-size: 18px;
+            border: 3px solid #f7a000;
+        } */
     }
     /*PAGE 2*/
     .table {
@@ -218,3 +216,4 @@ html body {
         }
     }
 }
+
