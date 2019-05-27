@@ -31,16 +31,41 @@ html body {
       padding: 20px;
       margin: 0; }
 
-#homepage .title {
+#homepage .background {
   position: relative;
-  justify-content: center;
-  text-align: center; }
+  padding: 0;
+  height: 150px;
+  background: papayawhip;
+  z-index: -1;
+  top: 0; }
+  #homepage .background .title {
+    position: relative;
+    text-align: center;
+    top: 20px; }
+    #homepage .background .title h1 {
+      margin: 0; }
+  #homepage .background .navbar {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: 0;
+    background: inherit;
+    border: unset;
+    z-index: 10; }
+#homepage .pixel-car {
+  position: relative;
+  width: 300px;
+  left: 50%;
+  transform: translateX(-50%); }
 #homepage .form div {
   display: block;
   width: 300px;
   margin: 0px auto; }
   #homepage .form div p {
     margin: 20px 0 10px; }
+  #homepage .form div input:focus {
+    outline: #a6a49f dotted 3px;
+    outline-offset: 3px; }
   #homepage .form div input {
     width: 100%;
     height: 100%;
@@ -49,6 +74,9 @@ html body {
     padding: 15px;
     border: 2px solid black;
     border-radius: 10px; }
+#homepage .form button:focus {
+  outline: #a6a49f dotted 3px;
+  outline-offset: 3px; }
 #homepage .form button {
   position: relative;
   left: 50%;
@@ -57,7 +85,24 @@ html body {
   margin: 20px 0;
   border: 2px solid black;
   border-radius: 10px;
+  background: papayawhip;
   padding: 10px;
+  padding-top: 15px;
   font-size: 14px; }
+#homepage table {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center; }
+  #homepage table th {
+    text-align: center;
+    padding: 10px; }
+  #homepage table tbody tr:nth-of-type(1) {
+    border-top: 2px solid black;
+    border-radius: 15px; }
+  #homepage table tbody td {
+    padding: 10px;
+    border-bottom: 2px solid black; }
+
+/* HOMEPAGE.HTML */
 
 /*# sourceMappingURL=main.css.map */

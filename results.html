@@ -15,19 +15,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 <body>
-<!-- <section class="sidenav">
-    <div id="sidenav"> 
-        <div class="toggle-btn" onclick="toggleSidenav()">
-        <i class="fas fa-bars fa-2x"></i>
-        </div>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    </div>
-    
-</section> -->
+
 <section id="homepage">
    
     <div class="background">
@@ -68,8 +56,7 @@
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
-        </nav>
-       
+        </nav>  
     
    </div>
    
@@ -77,29 +64,47 @@
         <img class="pixel-car" src="imgs/pixelcar1.png">
     </figure>
     
-    <form class="form" method="post" action="results.html">
-        <div>
-            <p>Name of car</p>
-            <input class="car-name" type="text" placeholder="Betsy" required> 
-        </div>
-        <div>
-            <p>Time Span <br> ( 1 = 1 Month | 12 = 1 Year )</p>
-            <input id="time-span" type="number" placeholder="12 Months" required>
-        </div>
-        <div>
-            <p>Weekly gas expense</p>
-            <input id="gas" type="number" placeholder="$20" required> 
-        </div>
-        <div>
-            <p>Monthly car payment? <br> ( If not applicable enter 0 )</p>
-            <input id="car-payment" type="number" placeholder="$0" required>
-        </div>
-        <div>
-            <p>Monthly insurance expense</p>
-            <input id="insurance" type="number" placeholder="$100" required>
-        </div>
-        <button>Submit</button>
-    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Gas</th>
+                <th>Insurance</th>
+                <th>Car Note</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2</td>
+                <td>$40</td>
+                <td>$100</td>
+                <td>$120</td>
+                <td>$260</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>$40</td>
+                <td>$100</td>
+                <td>$120</td>
+                <td>$260</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>$40</td>
+                <td>$100</td>
+                <td>$120</td>
+                <td>$260</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>$40</td>
+                <td>$100</td>
+                <td>$120</td>
+                <td>$260</td>
+            </tr>
+        </tbody>
+    </table>
     
 </section>
 <!-- JQUERY -->
